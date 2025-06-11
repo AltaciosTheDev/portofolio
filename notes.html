@@ -1,0 +1,61 @@
+<!-- 
+
+tools
+  1)vite
+  2)tailwind
+  3)lucide-react
+    icon library for react applications 
+  4)react router dom
+  5)tailwind merge
+    util func to combine classnames in tw
+  6)radix-ui/react-toast
+  7)class-variance-authority
+  8)clsx
+
+routes
+  1)home
+  2)notfound
+
+alias for importing from src
+  in vite config
+    resolve: {
+    alias: {
+      "@": path.resolve(path.dirname, "./src")
+    }
+  }
+
+defining custom variables in tailwind 4
+  what we are doing
+    1)storing raw hsl color values
+      hue, saturation, lightness
+    2)convert them to usable colors with hsl()
+    3)use them in html with tailwind feature
+  how
+    1)define base tokens
+      --border: 240, 5% , 84%
+    2)convert base tokens into real colors using hsl
+      --color-border: hsl(var(--border))
+    3)use tokens in html
+      "bg-[var(--color-background)]"
+  else
+    can use:  
+      rgb
+      hxd
+
+theory on animations
+  structure of the animation in code
+    1:keyframe
+      description of movement
+    2:--animate-* variable
+      css custom properties storing animation values(tailwind)
+    
+      example
+        --animate-float: float 6s ease-in-out infinite
+      is like wriing:
+        animation: float 6w ease-in-out inifinite
+      apply with:
+        <div class="animation-[var(--animate-float)]"></div>
+  
+
+
+-->
