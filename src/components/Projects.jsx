@@ -3,30 +3,29 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "SkillSwap",
+    description: " A platform for connecting users who want to teach or learn new skills!",
+    image: "../../public/projects/Skillswap.png",
+    tags: ["React.js","React Router", "Material UI", "Python", "Flask", "PostgreSQL"],
+    demoUrl: "https://sample-service-name-y9sl.onrender.com/",
+    githubUrl: "https://github.com/AltaciosTheDev/AltaciosTheDev-SkillSwap",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Jobs API",
+    description:"A jobs API listings with swagger UI documentation.",
+    image: "../../public/projects/JobsApi.png",
+    tags: ["Node.js", "Express.js", "Swagger UI", "MongoDB", "Mongoose"],
+    demoUrl: "https://temp-jobs-api-50fh.onrender.com/api-docs/#/",
+    githubUrl: "https://github.com/AltaciosTheDev/temp-jobs-api",
   },
   {
     id: 3,
     title: "E-commerce Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Full-featured e-commerce platform with user authentication and payment processing(Work in progress, not live yet).",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["Nextjs", "Typescript", "PostgreSQL", "Prisma", "Zod"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -61,7 +60,7 @@ export const Projects = () => {
               </div>
 
               <div className="p-6">
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap gap-2 mb-4 justify-center">
                   {project.tags.map((tag) => (
                     <span className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground">
                       {tag}
@@ -100,7 +99,7 @@ export const Projects = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/AltaciosTheDev"
           >
             Check My Github <ArrowRight size={16} />
           </a>

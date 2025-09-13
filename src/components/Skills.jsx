@@ -3,28 +3,33 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 95, category: "frontend" },
-  { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
-  { name: "TypeScript", level: 85, category: "frontend" },
-  { name: "Tailwind CSS", level: 90, category: "frontend" },
-  { name: "Next.js", level: 80, category: "frontend" },
+  { name: "HTML5", icon: "../../public/icons/HTML5.svg", category: "frontend", },
+  { name: "CSS3", icon: "../../public/icons/CSS3.svg", category: "frontend" },
+  { name: "Javascript", icon: "../../public/icons/Javascript.svg", category: "frontend" },
+  { name: "Typescript", icon: "../../public/icons/Typescript.svg", category: "frontend" },
+  { name: "React", icon: "../../public/icons/React.svg", category: "frontend" },
+  { name: "MaterialUI", icon: "../../public/icons/Material.svg", category: "frontend" },
+  { name: "TailwindCSS", icon: "../../public/icons/Tailwind.svg", category: "frontend" },
 
   // Backend
-  { name: "Node.js", level: 80, category: "backend" },
-  { name: "Express", level: 75, category: "backend" },
-  { name: "MongoDB", level: 70, category: "backend" },
-  { name: "PostgreSQL", level: 65, category: "backend" },
-  { name: "GraphQL", level: 60, category: "backend" },
+  { name: "Python", icon: "../../public/icons/Python.svg", category: "backend" },
+  { name: "Flask", icon: "../../public/icons/Flask.svg", category: "backend" },
+  { name: "Node.js", icon: "../../public/icons/Node.svg", category: "backend" },
+  { name: "Express", icon: "../../public/icons/Express.svg", category: "backend" },
+  { name: "MongoDB", icon: "../../public/icons/Mongo.svg", category: "backend" },
+  { name: "PostgreSQL", icon: "../../public/icons/Postgres.svg", category: "backend" },
 
   // Tools
-  { name: "Git/GitHub", level: 90, category: "tools" },
-  { name: "Docker", level: 70, category: "tools" },
-  { name: "Figma", level: 85, category: "tools" },
-  { name: "VS Code", level: 95, category: "tools" },
+  { name: "Git", icon: "../../public/icons/Git.svg", category: "other" },
+  { name: "GitHub", icon: "../../public/icons/Github.svg", category: "other" },
+  { name: "Playwright", icon: "../../public/icons/Playwright.svg", category: "other" },
+
+  // Learning
+  { name: "Next.js", icon: "../../public/icons/Next.svg", category: "learning" },
+
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = ["all", "frontend", "backend", "other", "learning"];
 
 export const Skills = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -45,7 +50,7 @@ export const Skills = () => {
               key={key}
               onClick={() => setActiveCategory(category)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-5 py-2 rounded-full transition-colors duration-300 capitalize hover:cursor-pointer",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary/70 text-forefround hover:bd-secondary"
@@ -62,21 +67,23 @@ export const Skills = () => {
               key={key}
               className="bg-card p-6 rounded-lg shadow-xs card-hover"
             >
-              <div className="text-left mb-4">
+              <div className="text-center mb-2">
                 <h3 className="font-semibold text-lg"> {skill.name}</h3>
               </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
+              <img src={skill.icon} className="h-20 mx-auto"/>
+              
+              {/* <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                 <div
                   className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
                   style={{ width: skill.level + "%" }}
                 />
-              </div>
+              </div> */}
 
-              <div className="text-right mt-1">
+              {/* <div className="text-right mt-1">
                 <span className="text-sm text-muted-foreground">
                   {skill.level}%
                 </span>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
