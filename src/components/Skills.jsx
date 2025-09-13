@@ -5,8 +5,8 @@ const skills = [
   // Frontend
   { name: "HTML5", icon: "../../icons/HTML5.svg", category: "frontend", },
   { name: "CSS3", icon: "../../icons/CSS3.svg", category: "frontend" },
-  { name: "Javascript", icon: "../../icons/Javascript.svg", category: "frontend" },
-  { name: "Typescript", icon: "../../icons/Typescript.svg", category: "frontend" },
+  { name: "Javascript", icon: "../../icons/JavaScript.svg", category: "frontend" },
+  { name: "Typescript", icon: "../../icons/TypeScript.svg", category: "frontend" },
   { name: "React", icon: "../../icons/React.svg", category: "frontend" },
   { name: "MaterialUI", icon: "../../icons/Material.svg", category: "frontend" },
   { name: "TailwindCSS", icon: "../../icons/Tailwind.svg", category: "frontend" },

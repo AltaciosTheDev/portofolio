@@ -30,7 +30,7 @@ export const About = () => {
               </a>
 
               <a
-                href="../../public/Enzo_Altamirano_CV.pdf"
+                href="../../Enzo_Altamirano_CV.pdf"
                 download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
