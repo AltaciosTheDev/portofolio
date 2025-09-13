@@ -21,7 +21,7 @@ const skills = [
 
   // Tools
   { name: "Git", icon: "../../icons/Git.svg", category: "other" },
-  { name: "GitHub", icon: "../../icons/GitHub.svg", category: "other" },
+  { name: "GitHub", icon: "../../icons/Hub.svg", category: "other" },
   { name: "Playwright", icon: "../../icons/Playwright.svg", category: "other" },
 
   // Learning
