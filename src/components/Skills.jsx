@@ -4,28 +4,28 @@ import { cn } from "@/lib/utils";
 const skills = [
   // Frontend
   { name: "HTML5", icon: "../../icons/HTML5.svg", category: "frontend", },
-  { name: "CSS3", icon: "../../public/icons/CSS3.svg", category: "frontend" },
-  { name: "Javascript", icon: "../../public/icons/Javascript.svg", category: "frontend" },
-  { name: "Typescript", icon: "../../public/icons/Typescript.svg", category: "frontend" },
-  { name: "React", icon: "../../public/icons/React.svg", category: "frontend" },
-  { name: "MaterialUI", icon: "../../public/icons/Material.svg", category: "frontend" },
-  { name: "TailwindCSS", icon: "../../public/icons/Tailwind.svg", category: "frontend" },
+  { name: "CSS3", icon: "../../icons/CSS3.svg", category: "frontend" },
+  { name: "Javascript", icon: "../../icons/Javascript.svg", category: "frontend" },
+  { name: "Typescript", icon: "../../icons/Typescript.svg", category: "frontend" },
+  { name: "React", icon: "../../icons/React.svg", category: "frontend" },
+  { name: "MaterialUI", icon: "../../icons/Material.svg", category: "frontend" },
+  { name: "TailwindCSS", icon: "../../icons/Tailwind.svg", category: "frontend" },
 
   // Backend
-  { name: "Python", icon: "../../public/icons/Python.svg", category: "backend" },
-  { name: "Flask", icon: "../../public/icons/Flask.svg", category: "backend" },
-  { name: "Node.js", icon: "../../public/icons/Node.svg", category: "backend" },
-  { name: "Express", icon: "../../public/icons/Express.svg", category: "backend" },
-  { name: "MongoDB", icon: "../../public/icons/Mongo.svg", category: "backend" },
-  { name: "PostgreSQL", icon: "../../public/icons/Postgres.svg", category: "backend" },
+  { name: "Python", icon: "../../icons/Python.svg", category: "backend" },
+  { name: "Flask", icon: "../../icons/Flask.svg", category: "backend" },
+  { name: "Node.js", icon: "../../icons/Node.svg", category: "backend" },
+  { name: "Express", icon: "../../icons/Express.svg", category: "backend" },
+  { name: "MongoDB", icon: "../../icons/Mongo.svg", category: "backend" },
+  { name: "PostgreSQL", icon: "../../icons/Postgres.svg", category: "backend" },
 
   // Tools
-  { name: "Git", icon: "../../public/icons/Git.svg", category: "other" },
-  { name: "GitHub", icon: "../../public/icons/Github.svg", category: "other" },
-  { name: "Playwright", icon: "../../public/icons/Playwright.svg", category: "other" },
+  { name: "Git", icon: "../../icons/Git.svg", category: "other" },
+  { name: "GitHub", icon: "../../icons/Github.svg", category: "other" },
+  { name: "Playwright", icon: "../../icons/Playwright.svg", category: "other" },
 
   // Learning
-  { name: "Next.js", icon: "../../public/icons/Next.svg", category: "learning" },
+  { name: "Next.js", icon: "../../icons/Next.svg", category: "learning" },
 
 ];
 
